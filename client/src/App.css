@@ -1,0 +1,537 @@
+.order-card {
+  color: #fff;
+}
+
+.bg-c-blue {
+  background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.bg-c-green {
+  background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.bg-c-yellow {
+  background: linear-gradient(45deg, #ffb64d, #ffcb80);
+}
+
+.bg-c-pink {
+  background: linear-gradient(45deg, #ff5370, #ff869a);
+}
+.bg-c-red {
+  background: linear-gradient(45deg, #ff4b4b, #ff7373);
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+/* Ticket CSS */
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  border-left: 10px solid #fec500;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.ticketCard {
+  display: table-row;
+  width: 100%;
+  gap: 20px;
+  background-color: #fff;
+  color: #989898;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ticketCard + .ticketCard {
+  margin-left: 2%;
+}
+
+.date {
+  display: table-cell;
+  width: 40%;
+  position: relative;
+  text-align: center;
+  border-right: 2px dashed black;
+}
+/* 
+.date:before,
+.date:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #e5e6ea;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 1;
+  border-radius: 50%;
+} */
+
+.date:after {
+  top: auto;
+  bottom: -15px;
+}
+
+.date time {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.date time span {
+  display: block;
+}
+
+.date time span:first-child {
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 250%;
+}
+
+.date time span:last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.card-cont {
+  display: table-cell;
+  width: 75%;
+  font-size: 85%;
+  padding: 10px 10px 30px 50px;
+}
+
+.card-cont h3 {
+  color: #3c3c3c;
+  font-size: 130%;
+}
+
+.row:last-child .card:last-of-type .card-cont h3 {
+  text-decoration: line-through;
+}
+
+.card-cont > div {
+  display: table-row;
+}
+
+/* .card-cont .even-date i,
+.card-cont .even-info i,
+.card-cont .even-date time,
+.card-cont .even-info p {
+  display: table-cell;
+  padding: 20px;
+} */
+
+/* .card-cont .even-date i,
+.card-cont .even-info i {
+  padding: 5% 5% 0 0;
+} */
+
+/* .card-cont .even-info p {
+  padding: 30px 50px 0 0;
+} */
+
+.card-cont .even-date time span {
+  display: block;
+}
+
+.card-cont a {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 90px;
+  height: 30px;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.qrCode {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+  height: 30px;
+  background-color: green;
+  color: red;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.row:last-child .card:first-child .card-cont a {
+  background-color: #037fdd;
+}
+
+.row:last-child .card:last-child .card-cont a {
+  background-color: #f8504c;
+}
+
+@media screen and (max-width: 860px) {
+  .ticketCard {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ticketCard + .ticketCard {
+    margin-left: 0;
+  }
+  .card-cont .even-date,
+  .card-cont .even-info {
+    font-size: 75%;
+  }
+}
+
+.event .title {
+  margin: 0px 0 0;
+}
+
+.event .nav-content {
+  float: right;
+  width: 70%;
+}
+
+.event .btn {
+  background: #ff007a;
+}
+
+.event .nav-content strong {
+  display: block;
+  font-family: Montserrat;
+  font-size: 20px;
+  color: #002691;
+}
+
+.event nav > div a.nav-item.nav-link.active .event .spicel-features {
+  background: #fafaff;
+}
+
+.event .nav-fill .nav-item {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 5px;
+  font-size: 12px;
+  margin-right: 16px;
+}
+
+.event .nav-fill .nav-item text-t i {
+  margin-right: 10px;
+}
+
+.event .nav-fill .nav-item i::before {
+  font-size: 26px;
+  margin-right: 13px;
+  position: relative;
+  top: 4px;
+}
+
+.event nav > .nav.nav-tabs {
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  flex-wrap: inherit;
+  padding: 0 30px;
+}
+
+.event .nav-item {
+  margin: 0 0;
+}
+
+.event a.nav-item.nav-link.active {
+  background: #ff007a !important;
+  color: #fff !important;
+}
+
+.event a.nav-item.nav-link.active strong {
+  color: #fff;
+}
+
+.event nav > div a.nav-item.nav-link,
+.event nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 18px 25px;
+  color: #47759d;
+  border-radius: 0;
+  background: #fff;
+  position: relative;
+  background: #f5faff;
+}
+
+.event nav > div a.nav-item.nav-link.active:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 15px 0;
+  border-color: transparent #e7015e transparent transparent;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  content: "";
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  border-color: transparent #ff007a transparent transparent;
+}
+
+.event .tab-content {
+  padding: 50px 25px 0 !important;
+}
+
+.event .user h5 {
+  margin-top: 20px;
+}
+
+.event .user p {
+  font-weight: bold;
+  color: #ff007a;
+}
+
+.event .user ul {
+  padding-top: 10px;
+  border-top: 1px solid #edf5ff;
+}
+
+.event .user ul li {
+  margin-top: 10px;
+}
+
+.event .user ul li i {
+  margin-right: 5px;
+}
+
+.event-list-content {
+  /* margin-left: 50px;
+  margin-right: 20px; */
+  padding: 25px;
+  position: relative;
+  border: 10px solid #edf5ff;
+  transition: all 0.2s ease 0s;
+}
+
+.event-list-content:hover {
+  border: 10px solid #ff007a;
+}
+
+.event-list-content .crical {
+  position: absolute;
+  background: #ff007a;
+  right: -66px;
+  bottom: -73px;
+  font-size: 30px;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 50px;
+}
+
+.event-list-content h2 {
+  margin-bottom: 30px;
+}
+
+.event-list-content .btn {
+  background: none;
+  border: 2px solid #edf5ff;
+  color: #47759d;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #ff007a;
+  border: 2px solid #ff007a;
+  color: #fff;
+  /* font-weight: bold; */
+  /* font-size: 14px; */
+  /* margin-right: 10px; */
+  box-shadow: 0px 10px 19px 0px #ff007a66 !important;
+}
+
+.event-list-content ul li {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #ff007a;
+}
+
+.event-list-content ul li i {
+  margin-right: 5px;
+}
+
+.event nav > div a.nav-item.nav-link .lgt-icon {
+  display: none;
+}
+
+.event nav > div a.nav-item.nav-link.active .lgt-icon {
+  display: inline-block;
+}
+
+.event nav > div a.nav-item.nav-link.active .drk-icon {
+  display: none;
+}
+
+.event nav > div a.nav-item.nav-link.active .drk-icon {
+  display: none;
+}
+
+.img,
+img {
+  max-width: 100%;
+  transition: all 0.2s ease-out 0s;
+}
+
+.event .user h5 {
+  margin-top: 20px;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  overflow-wrap: break-word;
+}
+h5 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #002691;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+}
+
+.event .user p {
+  font-weight: bold;
+  color: #ff007a;
+}
+.event .user ul {
+  padding-top: 10px;
+  border-top: 1px solid #edf5ff;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.event-list-content .crical {
+  position: absolute;
+  background: #ff007a;
+  right: -66px;
+  bottom: -73px;
+  font-size: 30px;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 50px;
+}
+.fix {
+  overflow: hidden;
+}
+
+/* Button tada animation */
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.tada {
+  animation: tada 3s infinite;
+}

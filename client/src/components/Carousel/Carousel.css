@@ -1,0 +1,22 @@
+.carousel-caption {
+  position: absolute;
+  bottom: 20px; /* Adjust the vertical positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; /* Adjust width as needed */
+  color: #fff; /* Text color */
+}
+
+.carousel-caption h3 {
+  font-size: 24px; /* Adjust font size */
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5; /* Adjust line height */
+}
